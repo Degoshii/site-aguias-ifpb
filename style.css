@@ -1,0 +1,790 @@
+/* Cor do body e imagem de fundo (Brand do IF)*/
+body {
+margin: 0;
+min-height: 100vh;
+  
+  background: 
+    radial-gradient(circle, rgba(33, 33, 33, 0.86) 0%, rgba(0, 0, 0, 0.92) 100%),
+    url('imagens/brand_IFPB.png') center/contain no-repeat fixed;
+    }
+
+/* Estilo personalizado para o card */
+  .card-personalizado {
+  /* Cores e bordas */
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  color: #ffffff; /* Texto branco para contraste com fundo preto */
+  
+  /* Efeitos e layout */
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  /* Tipografia Rajdhani */
+  font-family: 'Rajdhani', sans-serif;
+  font-display: swap; /* Otimização de carregamento */
+}
+
+/* Hierarquia tipográfica */
+.card-personalizado .card-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem; /* Tamanho aumentado para destaque */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; /* Padrão esportivo */
+}
+
+.card-personalizado .card-text {
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.5; /* Melhora legibilidade */
+}
+
+.card-personalizado .player-position {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  color: #ffffff; /* Roxo claro para contraste */
+  margin-bottom: 0.75rem;
+}
+
+/* Estilos específicos para os cards */
+.player-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.player-info {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+}
+
+.player-position {
+  font-weight: 500;
+  color: #8a63ff;
+}
+
+.player-divider {
+  color: #555;
+  margin: 0 5px;
+}
+
+.player-category {
+  font-weight: 400;
+  color: #aaa;
+}
+
+/* Botão unificado */
+.btn-player-action {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #ff0000;
+  color: #ff0000;
+  background: transparent;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-player-action:hover {
+  background: rgba(255, 0, 0, 0);
+  transform: scale(1.1);
+}
+
+/* Placeholder do SVG dentro do card */
+  .card-personalizado svg rect {
+    fill: #887b7b;             /* Fundo laranja */
+  }
+
+
+  .card-img-top {
+  height: 225px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1; /* Ocupa o espaço restante */
+  
+}
+
+/* Estilo personalizado para o botão */
+  .card-personalizado .btn-outline-secondary {
+    border-color: #000000;      /* Borda laranja */
+    color: #ff0000;            /* Texto laranja */
+    outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none !important;
+  }
+
+/* Estatísticas destacadas */
+.card-personalizado .stats {
+  font-weight: 500;
+  background: rgba(138, 99, 255, 0.1);
+  padding: 0.3rem 0;
+  border-radius: 4px;
+}
+
+/* Efeitos de hover */
+.card-personalizado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(138, 99, 255, 0.3);
+}
+
+/* Estatísticas destacadas */
+.card-personalizado .stats {
+  font-weight: 500;
+  background: rgba(138, 99, 255, 0.1);
+  padding: 0.3rem 0;
+  border-radius: 4px;
+}
+
+ /* Efeito ao passar o mouse */
+  .card-personalizado:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+/* Cards - Fim */
+
+/* Modais */
+
+/* Estilo personalizado para todos os modais */
+.modal-content {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(to bottom, #333333d1, #000000);
+  color: white;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  color: #ffffff;
+  padding: 2rem;
+  background-color: #000000;
+}
+
+.modal-footer {
+  border-top: none;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+}
+
+
+.minimal-close-btn {
+  /* Reset e posicionamento */
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  
+  
+  /* Centralização */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Interatividade */
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none !important;
+}
+
+.minimal-close-line {
+  display: block;
+  width: 16px;
+  height: 1px; /* Espessura do traço */
+  background: #ffffff; /* Cor do traço */
+  transition: transform 0.2s ease;
+}
+
+/* Estados interativos */
+.minimal-close-btn:hover {
+  opacity: 1;
+}
+
+.minimal-close-btn:hover .minimal-close-line {
+  transform: scaleX(1.2); /* Efeito sutil de elongação */
+}
+
+.minimal-close-btn:active .minimal-close-line {
+  background: #ffffff; /* Cor de destaque ao pressionar */
+}
+
+.no-focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.no-focus:focus-visible {
+  background: rgba(138, 99, 255, 0.2);
+}
+
+.btn-form {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  background: transparent ; /* ou background: none; */
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease; /* Reduzi para 0.3s para uma transição mais suave */
+  cursor: pointer;
+  padding: 0.5em; /* Adicione algum padding para melhor aparência */
+  width: 20%;
+}
+
+.btn-form:hover {
+  background: transparent ; /* Garante que o fundo permaneça transparente */
+  transform: scale(1.1);
+  /* Se quiser mudar a cor do texto ou borda no hover, adicione aqui */
+  color: rgb(255, 255, 255);
+     border-color: rgb(255, 0, 0); 
+}
+
+/*Botão para voltar para o topo*/
+
+  .back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white !important;
+    text-decoration: none !important; /* Remove sublinhado SEMPRE */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    outline: none; /* Remove contorno ao focar */
+    cursor: pointer;
+    width: 40%;
+    align-items: center;
+    margin: auto;
+
+  }
+
+  /* Remove sublinhado em todos os estados */
+  .back-to-top:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta levemente */
+}
+  .back-to-top:active,
+  .back-to-top:focus {
+    text-decoration: none !important;
+    background-color: #000000;
+    transform: translateY(2px);
+  }
+
+  /* Remove efeito de foco em navegadores como Chrome/Firefox */
+  .back-to-top:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .form-container{
+    background-color: transparent;
+    border-radius: 14px;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .form{
+    padding: 18px;
+  }
+  .form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+    color: #ffffff;
+  }
+  .form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+  .form-content button{
+    background-color: green;
+    color: #8a63ff;
+  }
+  .form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden; 
+  }
+  .form-content.error input{
+    border-color: #ff0000;
+  }
+  .form-content.error a{
+    border-color: #ff0000;
+    visibility: visible;
+    color: #ff0000;
+  }
+   .form-content select{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+
+
+
+
+  /* style do Index */
+/* Estilo do texto */
+
+.container:not(:last-child) {
+  margin-bottom: 120px; /* Adiciona espaço em todos exceto no último */
+}
+
+.tituloprincipal_index {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff2121;
+  margin-top: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-display: swap; /* Otimização de carregamento */
+}
+ 
+.subtitulo_index {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-display: swap; /* Otimização de carregamento */
+}
+.textolista_index {
+font-size: 1.2rem;
+color: #ffffff;
+font-family: 'Rajdhani', sans-serif;
+font-display: swap; /* Otimização de carregamento */
+}
+
+.titulo_index {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff2121;
+  margin-top: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-display: swap; /* Otimização de carregamento */
+
+}
+.texto_index {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 20px auto;
+  font-family: 'Rajdhani', sans-serif;
+  font-display: swap; /* Otimização de carregamento */
+}
+/* Estilo para o botão de rolagem */
+.scroll-button {
+  padding: 12px 24px;
+  background-color: #f94d4d;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.scroll-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f03a3a;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.scroll-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* Estilo do sumário */
+:root {
+  --primary-color: #ee4351;
+  --secondary-color: #a30c19;
+  --text-color: #ffffff;
+  --light-bg: #e9e9e9;
+  --white: #030303;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+.sumario {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  max-width: 300px;
+}
+
+.sumario h2 {
+  margin: 0 0 20px 0;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sumario h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 3px;
+}
+
+.sumario ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sumario li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.sumario li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.sumario li:hover::before {
+  background-color: var(--secondary-color);
+  transform: translateY(-50%) scale(1.3);
+}
+
+.sumario a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: var(--transition);
+  display: block;
+  padding: 5px 0;
+}
+
+.sumario a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.sumario ul ul {
+  margin-top: 8px;
+  margin-left: 15px;
+  border-left: 1px dashed #ddd;
+  padding-left: 15px;
+}
+
+.sumario ul ul li::before {
+  background-color: #adb5bd;
+}
+/* card para a página elenco */
+  .card-moderna {
+    display: block;
+    max-width: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+    position: relative;
+    color: white !important;
+    text-decoration: none !important;
+    
+  }
+  
+  .card-moderna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+  
+  .card-moderna::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff0000 0%, #ff002b 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-moderna:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .card-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-texto {
+    flex: 1;
+  }
+  
+  .card-tag {
+    display: inline-block;
+    background: rgba(255, 107, 0, 0.1);
+    color: #ff0000;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .card-texto h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #e2e2e2;
+  }
+  
+  .card-texto p {
+    margin: 0;
+    color: #b1b1b1;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .card-icone {
+    color: #ff0000;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-moderna:hover .card-icone {
+    transform: translateX(3px);
+  }
+
+
+  /* Style Index*/
+  .img-time-aguias {
+    width: 1000px; /* ou qualquer tamanho desejado */
+    height: auto; /* mantém a proporção */
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */ 
+    transition: transform 0.3s ease; /* efeito de hover suave */
+    display: block; /* para centralizar com margin */
+    margin: 0 auto 1rem; /* centraliza e mantém margem inferior */
+  }
+
+  .img-time-aguias:hover {
+    transform: scale(1.02); /* efeito de zoom leve ao passar o mouse */
+  }
+/* Estilo do mapa */
+ #map {        
+      height: 300px; 
+      width: 100%;
+      border: 2px solid #660000; 
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+/* estilo da lista */
+ .hover-list {
+    --accent-color: #ff4a4a;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    
+  }
+  
+  .hover-list h2 {
+    color: #d83e3e;
+    margin-bottom: 1rem;
+  }
+  
+  .hover-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hover-list li {
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-list li:hover {
+    background: rgba(74, 107, 255, 0.05);
+    transform: translateX(4px);
+  }
+  
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  
+  .list-content span:last-child {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+
+/* Estilo do botão do Instagram */
+  .container-buttons {
+    display: flex;
+    gap: 15px; /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem para linha seguinte em telas pequenas */
+  }
+  
+  .instagram-btn, .forms-btn, .ifpb-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white !important;
+    text-decoration: none !important;
+  }
+  
+  .forms-btn {
+    background: #333333;
+    color: white !important;
+    text-decoration: none !important;
+  }
+  
+  .ifpb-btn {
+    background: #ff0000;
+    color: white !important;
+    text-decoration: none !important;
+  }
+  
+  .instagram-btn:hover, .forms-btn:hover, .ifpb-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .hover-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.4s ease;
+  }
+  
+  .instagram-btn:hover .hover-effect,
+  .forms-btn:hover .hover-effect,
+  .ifpb-btn:hover .hover-effect {
+    left: 0;
+  }
+  
+  .fab {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sumario {
+    position: static;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao i {
+        flex-shrink: 0;
+        margin-right: 10px; /* Ajuste conforme necessário */
+    }
+    
+
+  
+
+  

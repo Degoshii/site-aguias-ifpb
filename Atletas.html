@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<head>
+  <title>Atletas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<!--Barra de navegação -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" aria-current="page">Elenco</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Forms.html">Inscrição</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </header>
+
+  <!--Parte principal da página -->
+  <main role="main">
+  <br><br><br>
+    <div class="container text-center">
+      <h1 class="jumbotron-heading text-light">Elenco do IFPB</h1>
+      <p class="lead text-light"> Conheça os atletas que representam o time!</p>
+    </div>
+
+  <br><br><br>
+
+<!-- Inícios dos cards-->
+    <div class="album py-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Card 1 - Miguel -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Miguel_Bezerra.JPG" class="card-img-top" alt="Miguel Bezerra" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">MIGUEL BEZERRA</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/PIVÔ</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-U20</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalMiguel"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Card 2 - Ryan -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Ryan_Lucas.jpg" class="card-img-top" alt="Ryan Lucas" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">RYAN LUCAS</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-U19</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalRyan"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Card 3 - Caio -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Caio_Rosas.jpg" class="card-img-top" alt="Caio Rosas" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura  padronizada e otimizada -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">CAIO ROSAS</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-U16</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+     <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalCaio"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4 - Luís Miguel -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Luis_Miguel.jpg" class="card-img-top" alt="Luis Miguel" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">LUIS MIGUEL</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-19</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalLuis"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 - Erbeson Evangelista -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Erbeson_Evangelista.jpg" class="card-img-top" alt="Erbeson" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">ERBESON EVANGELISTA</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/PIVÔ</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-20</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalErbeson"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 - Marcos Júnior -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Marcos_Junior.jpg" class="card-img-top" alt="Marcos" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">MARCOS JÚNIOR</h3>
+        <div class="player-info">
+          <span class="player-position">PIVÔ</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-18</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalMarcos"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 7 - Clovis Rocha -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Clovis_Rocha.jpg" class="card-img-top" alt="Clovis" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">CLOVIS ROCHA</h3>
+        <div class="player-info">
+          <span class="player-position">ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-15</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalClovis"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 8 - João Domingos -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Joao_Domingos.jpg" class="card-img-top" alt="Joao" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">JOÃO DOMINGOS</h3>
+        <div class="player-info">
+          <span class="player-position">ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-18</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalJoao"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 9 - Igor Pereira -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Igor_Pereira.jpg" class="card-img-top" alt="Igor" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">IGOR PEREIRA</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-16</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalIgor"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 10 - Luiz Texeira -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Luiz_Texeira.png" class="card-img-top" alt="Luiz" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">LUIZ TEIXEIRA</h3>
+        <div class="player-info">
+          <span class="player-position">ALA/PIVÔ</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-17</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalLuiz"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 11 - John Alisson -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/John_Alisson.JPG" class="card-img-top" alt="John" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">JOHN ALISSON</h3>
+        <div class="player-info">
+          <span class="player-position">ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-19</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalJohn"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 12 - Vinicius Guedes -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow-sm card-personalizado">
+    <img src="imagens/Vinicius_Guedes.JPG" class="card-img-top" alt="Vinicius" style="height: 225px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <!-- Estrutura padronizada e otimizada  -->
+      <div class="text-center mb-2 flex-grow-1">
+        <h3 class="player-name">VINÍCIUS GUEDES</h3>
+        <div class="player-info">
+          <span class="player-position">ARMADOR</span>
+          <span class="player-divider">•</span>
+          <span class="player-category">SUB-19</span>
+        </div>
+      </div>
+      
+      <!-- Botão com classe específica -->
+      <div class="text-center">
+        <button type="button" 
+                class="btn-player-action no-focus" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalVinicius"
+                aria-label="Ver detalhes">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modals (colocar no final do body, antes do </body>) -->
+
+<!-- Modal Miguel -->
+<div class="modal fade" id="modalMiguel" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Miguel Bezerra - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Miguel_Bezerra.JPG" class="img-fluid mb-3" alt="Miguel">
+        <p><strong>Nome completo:</strong> Miguel Silva dos Santos Bezerra </p>
+        <p><strong>Data de nascimento:</strong> 14/12/2005 </p>
+        <p><strong>Categoria:</strong> Sub-20 </p>
+        <p><strong>Altura:</strong> 1,87m </p>
+        <p><strong>Peso:</strong> 81 kg </p>
+        <p><strong>Posição:</strong> Ala/pivô </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ryan -->
+<div class="modal fade" id="modalRyan" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ryan Lucas - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Ryan_Lucas.jpg" class="img-fluid mb-3" alt="Ryan">
+        <p><strong>Nome completo:</strong> Ryan Lucas Nogueira </p>
+        <p><strong>Data de nascimento:</strong> 03/10/2006 </p>
+        <p><strong>Categoria:</strong> Sub-19 </p>
+        <p><strong>Altura:</strong> 1,80m </p>
+        <p><strong>Peso:</strong> 78 kg </p>
+        <p><strong>Posição:</strong> Ala/armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Caio -->
+<div class="modal fade" id="modalCaio" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Caio Rosas - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Caio_Rosas.jpg" class="img-fluid mb-3" alt="Caio">
+        <p><strong>Nome completo:</strong> Caio Torres Rosas </p>
+        <p><strong>Data de nascimento:</strong> 25/02/2009 </p>
+        <p><strong>Categoria:</strong> Sub-16 </p>
+        <p><strong>Altura:</strong> 1,78m </p>
+        <p><strong>Peso:</strong> 62.5 kg </p>
+        <p><strong>Posição:</strong> Ala/Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Luis Miguell -->
+<div class="modal fade" id="modalLuis" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Luis Miguel - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Luis_Miguel.JPG" class="img-fluid mb-3" alt="Miguel">
+        <p><strong>Nome completo:</strong> Luis Miguel De Oliveira Batista </p>
+        <p><strong>Data de nascimento:</strong> 18/05/2006 </p>
+        <p><strong>Categoria:</strong> Sub-19 </p>
+        <p><strong>Altura:</strong> 1,83m </p>
+        <p><strong>Peso:</strong> 74 kg </p>
+        <p><strong>Posição:</strong> Ala/armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+        
+<!-- Modal Erbeson Evangelista -->
+<div class="modal fade" id="modalErbeson" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Erbeson Evangelista - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Erbeson_Evangelista.JPG" class="img-fluid mb-3" alt="Erbeson">
+        <p><strong>Nome completo:</strong> Erberson Evangelista Vieira Filho</p>
+        <p><strong>Data de nascimento:</strong> 28/03/2005 </p>
+        <p><strong>Categoria:</strong> Sub-20 </p>
+        <p><strong>Altura:</strong> 1,86m </p>
+        <p><strong>Peso:</strong> 83 kg </p>
+        <p><strong>Posição:</strong> Ala/pivô </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Marcos Júnior -->
+<div class="modal fade" id="modalMarcos" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Marcos Júnior - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Marcos_Junior.JPG" class="img-fluid mb-3" alt="Marcos">
+        <p><strong>Nome completo:</strong> Marcos Antônio da Silva Nery Júnior </p>
+        <p><strong>Data de nascimento:</strong> 07/01/2007 </p>
+        <p><strong>Categoria:</strong> Sub-18 </p>
+        <p><strong>Altura:</strong> 1,92m </p>
+        <p><strong>Peso:</strong> 65 kg </p>
+        <p><strong>Posição:</strong> Pivô </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Clovis Rocha -->
+<div class="modal fade" id="modalClovis" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Clovis Rocha - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Clovis_Rocha.JPG" class="img-fluid mb-3" alt="Marcos">
+        <p><strong>Nome completo:</strong> Clovis Henrique Agostinho da Rocha </p>
+        <p><strong>Data de nascimento:</strong> 25/08/2009 </p>
+        <p><strong>Categoria:</strong> Sub-15 </p>
+        <p><strong>Altura:</strong> 1,68m </p>
+        <p><strong>Peso:</strong> 73 kg </p>
+        <p><strong>Posição:</strong> Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal João Domingos -->
+<div class="modal fade" id="modalJoao" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">João Domingos - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Joao_Domingos.JPG" class="img-fluid mb-3" alt="Joao">
+        <p><strong>Nome completo:</strong> João Domingos Paz</p>
+        <p><strong>Data de nascimento:</strong> 09/03/2007 </p>
+        <p><strong>Categoria:</strong> Sub-18 </p>
+        <p><strong>Altura:</strong> 1,84m </p>
+        <p><strong>Peso:</strong> 66 kg </p>
+        <p><strong>Posição:</strong> Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Igor Pereira -->
+<div class="modal fade" id="modalIgor" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Igor Pereira - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Igor_Pereira.JPG" class="img-fluid mb-3" alt="Igor">
+        <p><strong>Nome completo:</strong> Igor Pereira Wagner </p>
+        <p><strong>Data de nascimento:</strong> 14/01/2009 </p>
+        <p><strong>Categoria:</strong> Sub-16 </p>
+        <p><strong>Altura:</strong> 1,77m </p>
+        <p><strong>Peso:</strong> 63 kg </p>
+        <p><strong>Posição:</strong> Ala/Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Luiz Teixeira -->
+<div class="modal fade" id="modalLuiz" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Luiz Teixeira - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Luiz_Texeira.png" class="img-fluid mb-3" alt="Igor">
+        <p><strong>Nome completo:</strong> Luiz Gustavo Costa Teixeira </p>
+        <p><strong>Data de nascimento:</strong> 10/12/2008 </p>
+        <p><strong>Categoria:</strong> Sub-16 </p>
+        <p><strong>Altura:</strong> 1,80m </p>
+        <p><strong>Peso:</strong> 68 kg </p>
+        <p><strong>Posição:</strong> Ala/Pivô </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal John Alisson -->
+<div class="modal fade" id="modalJohn" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">John Alisson - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/John_Alisson.JPG" class="img-fluid mb-3" alt="Igor">
+        <p><strong>Nome completo:</strong> John Alisson Vieira dos Santos </p>
+        <p><strong>Data de nascimento:</strong> 24/03/2006 </p>
+        <p><strong>Categoria:</strong> Sub-19 </p>
+        <p><strong>Altura:</strong> 1,62m </p>
+        <p><strong>Peso:</strong> 55 kg </p>
+        <p><strong>Posição:</strong> Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Vinícius Guedes -->
+<div class="modal fade" id="modalVinicius" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">VinÍcius Guedes - Detalhes</h5>
+        <button type="button" class="minimal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <span class="minimal-close-line"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Vinicius_Guedes.jpg" class="img-fluid mb-3" alt="Igor">
+        <p><strong>Nome completo:</strong> Vinícius Guedes de Melo Costa e Silva </p>
+        <p><strong>Data de nascimento:</strong> 08/08/2006 </p>
+        <p><strong>Categoria:</strong> Sub-19 </p>
+        <p><strong>Altura:</strong> 1,65m </p>
+        <p><strong>Peso:</strong> 65 kg </p>
+        <p><strong>Posição:</strong> Armador </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+
+        
+
+        
+
+        
+      
+
+  </main>
+
+  <footer class="text-muted">
+        <div class="container">
+            <p class="text-center">
+                <a href="#" class="back-to-top">↑</a> 
+            </p>
+        </div>
+  
+
+    
+    
+</footer>
+<script src="script.js"></script>
+</body>
+
+
+
+</html>

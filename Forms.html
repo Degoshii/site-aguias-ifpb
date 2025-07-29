@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Atletas.html">Elenco</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Inscrição</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <br><br><br>
+    <div class="container text-center">
+      <h1 class="jumbotron-heading text-light">Formulário de Inscrição</h1>
+      <p class="lead text-light">Faça sua inscrição para entrar nos Águias do IFPB</p>
+    </div>
+    <br><br><br>
+
+    <div class="form-container">
+      <form id="form" 
+            action="https://script.google.com/macros/s/AKfycbyhGhcf_z2qf6r-j7aX3rKGVuVpxgNfR1bI0hqOozCDUwP_WPfslh5qd3UBkDGDlT60Dg/exec" 
+            method="post" class="form">
+
+        <div class="form-content">
+          <label for="nome">Nome Completo :</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email..." required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="telefone">Telefone :</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxxx-xxxx" required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="peso">Peso :</label>
+          <input type="number" id="peso" name="peso" placeholder="Peso em kg..." required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="altura">Altura :</label>
+          <input type="number" id="altura" name="altura" placeholder="Altura em cm..." required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="data">Data de Nascimento :</label>
+          <input type="date" id="data" name="data" required />
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="sexo">Sexo :</label>
+          <select id="sexo" name="sexo" required>
+            <option value=""></option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select>
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="form-content">
+          <label for="experiencia">Experiência com basquete :</label>
+          <select id="experiencia" name="experiencia" required>
+            <option value=""></option>
+            <option value="muito">Possuo bastante experiência</option>
+            <option value="pouco">Possuo pouca experiência</option>
+            <option value="nada">Não possuo experiência</option>
+          </select>
+          <a> Mensagem de erro </a>
+        </div>
+
+        <div class="text-center">
+          <button type="reset" class="btn-form" aria-label="Limpar formulário">Limpar</button>
+          <br><br>
+          <button type="submit" class="btn-form" aria-label="Enviar formulário">Enviar</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="text-center">
+        <a href="#" class="back-to-top">↑</a> 
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
